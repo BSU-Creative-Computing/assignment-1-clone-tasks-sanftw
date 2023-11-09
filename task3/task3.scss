@@ -1,0 +1,128 @@
+body {
+    margin-top: auto ;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.box1 {
+    @include center-element;
+    height: 300px;
+    background-color: #8ccff7;
+    
+}
+.box {
+    @include center-element;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-image: url(https://via.placeholder.com/400);
+}
+.box2{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    
+}
+.line{
+    &:hover {
+        background-color: #444; /* Hover color */
+}
+}
+
+.d1{
+    background-color: #4e89ae;
+    padding: 20px;
+}
+
+.d2{
+    background-color: #43658b ;
+    padding: 20px;
+}
+
+.d3{
+    background-color: #ed6663;
+    padding: 20px;
+}
+
+.d4{
+    background-color: #ffa372;
+    padding: 20px;
+}
+
+.box3{
+    @include center-element;
+    padding: 2%
+}
+.circle {
+    @include center-element;
+    width: 100px; 
+    height: 100px;
+    background-color: #4e89ae;
+    margin: 10px; 
+  
+    &:hover {
+      background-color: #444; 
+    }
+  }
+  
+.c1{
+    border-radius: 70px;
+    width: 70px;
+    height: 70px;
+    background-color: #4e89ae;
+}
+
+
+.c2{
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: #43658b ;
+}
+
+.c3{
+    border-radius: 90px;
+    width: 90px;
+    height: 90px;
+    background-color: #ed6663;
+}
+
+.c4{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #ffa372;
+}
+footer {
+    @include center-element;
+    height: 50px;
+    background-color: #8ccff7;
+}
+  @media (max-width: 800px) {
+    .box {
+        @include center-element;
+        height: 300px;
+        width: 300px;
+        background-size: cover;
+        background-image: url(https://via.placeholder.com/300);
+    }    
+}
+@media (max-width: 480px) {
+    .box {
+        @include center-element;
+        height: 300px;
+        width: 300px;
+        background-size: cover;
+        background-image: url(https://via.placeholder.com/200);
+    }
+}
+@media (max-width: 620px) {
+    .box3 {
+        @include center-element;
+        flex-direction: column;
+    }
+}

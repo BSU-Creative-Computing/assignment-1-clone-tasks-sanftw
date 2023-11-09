@@ -1,0 +1,138 @@
+/* /* centering content  */
+body { 
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*style for box1 with background color and height*/
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #8ccff7;
+}
+/*style for box with background color and height width and aligning items with bg image*/
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-image: url(https://via.placeholder.com/400);
+}
+/*style for box2 with margin change*/
+.box2 {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+}
+/*style for box with background color and height width and aligning items with bg image*/
+.line:hover {
+  background-color: #444; /* Hover color */
+}
+/* Styling for individual lines with different colors */
+.d1 {
+  background-color: #4e89ae;
+  padding: 20px;
+}
+
+.d2 {
+  background-color: #43658b;
+  padding: 20px;
+}
+
+.d3 {
+  background-color: #ed6663;
+  padding: 20px;
+}
+
+.d4 {
+  background-color: #ffa372;
+  padding: 20px;
+}
+/*styling for box3*/
+.box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+/*styling for all the circles*/
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #4e89ae;
+  margin: 10px;
+}
+
+.c1 {
+  border-radius: 70px;
+  width: 70px;
+  height: 70px;
+  background-color: #4e89ae;
+}
+
+.c2 {
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
+  background-color: #43658b;
+}
+
+.c3 {
+  border-radius: 90px;
+  width: 90px;
+  height: 90px;
+  background-color: #ed6663;
+}
+
+.c4 {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #ffa372;
+}
+/* Style for the footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #8ccff7;
+}
+/* following media queries for responsive design based on screen width */
+@media (max-width: 800px) {
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-image: url(https://via.placeholder.com/300);
+  }
+}
+@media (max-width: 480px) {
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-image: url(https://via.placeholder.com/200);
+  }
+}
+@media (max-width: 620px) {
+  .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=task3.css.map */

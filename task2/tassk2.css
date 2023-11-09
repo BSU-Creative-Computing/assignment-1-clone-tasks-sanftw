@@ -1,0 +1,208 @@
+/*changing up default settings*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*styling for body on bg color and fonts*/ 
+body {
+    background-color: #d7d7d7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*styling nav bar with paddings margin, bg color*/ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e90ff;
+    padding: 15px 15px;
+    margin-bottom: 6px;
+}
+/*styling of heading in navbar*/
+nav h2 {
+    color: #f4f4f4;
+    margin-right: 6.5rem;
+}
+/*styling of logo*/ 
+.logo {
+    font-weight: 800;
+    cursor: pointer;
+}
+/*styling of search bar*/  
+.search {
+    width: 300px;
+    height: 35px;
+    font-size: 18px;
+    padding: 10px; 
+    border: none;
+}
+/*styling text in navbar*/ 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1vh;
+}
+/*styling 'menu' section*/ 
+.menu {
+    display: none;
+}
+/* Styling for the footer */  
+footer {
+    text-align: center;
+    padding: 40px 40px;
+}
+/* styling for 'boxes' with a white background, margin, and box shadow */  
+.boxes {
+    background-color: #fff;
+    margin: 5px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+/* Styling for images within the 'main' section*/ 
+.main img {
+    max-width: 100%;
+}
+/* styling for images with specific width and height */  
+.d3 img {
+    max-width: 100%;
+    width: 220px;
+    height: 240px;
+}
+/* Styling for heading and paragraphs */  
+.main h3 {
+    padding: 10px 12px 6px 12px;
+}
+  
+.main p {
+    padding: 0px 12px;
+    line-height: 20px;
+    text-align: justify;
+}
+  
+.d3 h3 {
+    padding: 1px 1px;
+}
+  
+.d3 p {
+    padding: 3px 1px;
+    line-height: 22px;
+}
+/* styling for button with background and some padding and margin */  
+button {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 10px 1px 2px auto;
+    border: none;
+    border-radius: 2px;
+}
+  
+.main button {
+    margin: 10px 12px 2px auto;
+}
+  
+.upper .d2:last-child button {
+    margin: 53px 1px 2px auto;
+}
+  
+.q1 {
+    display: flex;
+    justify-content: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+  
+.main {
+    display: flex;
+    flex-basis: 500px;
+    height: 640px;
+}
+  
+.d3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 410px;
+}
+/* styling for the 'upper' and 'lower' sections, and also setting flex display */  
+.upper,.lower {
+    display: flex;
+}
+  
+.d2 {
+    flex: 1;
+    padding: 10px 10px;
+}
+/* following media queries for responsive design based on screen width */  
+@media (min-width: 801px) and (max-width: 1024px) {
+    .upper,
+    .lower {
+    flex-direction: column;
+}
+  
+.d3 {
+    flex-basis: 250px;
+}
+  
+.main {
+    flex-basis: 480px;
+}
+}
+  
+@media (min-width: 481px) and (max-width: 800px) {
+.q1 {
+    flex-direction: column;
+    padding: 1rem;
+}
+  
+.d3 img {
+    width: auto;
+    height: auto;
+}
+  
+.main {
+    flex-basis: 480px;
+    height: auto;
+}
+  
+.navi,
+.bar {
+    display: none;
+}
+  
+.menu {
+    display: block;
+}
+  
+nav h2 {
+    margin-right: 2px;
+}
+}
+  
+@media (max-width: 480px) {
+.q1 {
+    flex-direction: column;
+}
+  
+.upper,
+.lower{
+    flex-direction: column;
+}
+  
+.d3 img {
+    width: auto;
+    height: auto;
+}
+  
+.navi,
+.bar {
+    display: none;
+}
+  
+.menu {
+    display: block;
+}
+  
+nav h2 {
+    margin-right: 2px;
+}
+}
